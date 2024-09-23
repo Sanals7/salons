@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalonHub - Find Top Salons in Your City</title>    
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/js.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Header-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <img src="images/logo.png" class="logo"  href="#">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">How It Works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">For Vendors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-link btn btn-primary"><a class="nav-link" href="#">Sign In/Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+     <!-- Slider -->
+     <section class="hero" style="background-image: url(images/slider.jpg); ">
+   
+        <div class="container text-center">
+            <h1>Discover Top Salons in Your City</h1>
+            <p class="lead">Explore top-rated salons near you, discover exclusive deals, and book your next beauty appointment with ease and confidence.</p>
+
+            <div class="search-bar">
+                <form class="form-inline justify-content-center">
+                    <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Search by service (haircut, makeup, skincare, etc.)" aria-label="Search" style="width: 400px;">
+                    <button class="btn btn-primary btn-lg my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <a href="#" class="btn btn-link text-light mt-3">Advanced Search</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="services text-center  py-6">
+    
+        <div class="container">
+            <h2 class="mb-5">DISCOVER YOUR PERFECT LOOK</h2>
+            <div class="row">
+                <div class="col-md-2 col-sm-6">
+                    <img src="images/haircut.png" alt="Haircuts & Styling" class="img-fluid">
+                    <p style="margin: 14px;color: #007bff;font-weight: 500;">Haircuts & Styling</p>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <img src="images/makeup.png" alt="Makeup Application" class="img-fluid">
+                    <p style="margin: 14px;color: #007bff;font-weight: 500;">Makeup Application</p>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <img src="images/skincare.png" alt="Skincare Treatments" class="img-fluid">
+                    <p style="margin: 14px;color: #007bff;font-weight: 500;">Skincare Treatments</p>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <img src="images/pedicure.png" alt="Pedicure" class="img-fluid">
+                    <p style="margin: 14px;color: #007bff;font-weight: 500;">Pedicure</p>
+                </div>               
+                <div class="col-md-2 col-sm-6">
+                    <img src="images/bridal.png" alt="Bridal Services" class="img-fluid">
+                    <p style="margin: 14px;color: #007bff;font-weight: 500;">Bridal Services</p>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <img src="images/manicure.png" alt="manicure" class="img-fluid">
+                    <p style="margin: 14px;color: #007bff;font-weight: 500;">Manicure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    
+    <section class="feature-boxes">
+        <div class="feature-box" style="background-image: url(images/featureleft.jpg);background-size: cover;">
+            <h3>Discover Salons</h3>
+            <p>Discover the latest trends in haircuts and styles.</p>
+        </div>
+        <div class="feature-box" style="background-image: url(images/featuremid.jpeg);background-size: cover;">
+           
+        </div>
+        <div class="feature-box" style="background-image: url(images/featureright.jpg);background-size: cover;">
+            <h3>Book Instantly</h3>
+            <p>Rejuvenating treatments for glowing skin.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+ <!-- Deal of the Day Section -->
+    
+
+<section class="dealsalon text-center" style="background-image: url('images/dealbg.jpg'); background-attachment: fixed; background-size: cover;">
+    <div class="container">
+        <h2 class="mb-4">Deal of the Day</h2>
+      
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/dealsalon.jpg" class="dealsalon">
+                        <div class="deal-timer">Special Offer Ends In: <span id="dealtimer">00:15:23:45</span></div>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <h4 class="align-middle" style="padding-top: 50px; font-size: 26px;">LOOKS SALON</h4>
+                        <p>Mumbai</p>
+                        <button class="btn btn-warning">Book Now</button>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <ul class="list-unstyled offer">
+                            <li>30% Off Skincare Treatments</li>
+                            <li>Free Facial with Hair Color</li>
+                            <li>Complimentary Makeup Trial</li>
+                            <li>Flat ₹500 Off on Hair Smoothing</li>
+                        </ul>
+                     
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/slider.jpg" class="dealsalon">
+                        <div class="deal-timer">Special Offer Ends In: <span id="dealtimer">00:15:23:45</span></div>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <h4 class="align-middle" style="padding-top: 50px; font-size: 26px;">LOOKS SALON</h4>
+                        <p>Mumbai</p>
+                        <button class="btn btn-warning">Book Now</button>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <ul class="list-unstyled offer">
+                            <li>30% Off Skincare Treatments</li>
+                            <li>Free Facial with Hair Color</li>
+                            <li>Complimentary Makeup Trial</li>
+                            <li>Flat ₹500 Off on Hair Smoothing</li>
+                        </ul>
+                     
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/dealsalon.jpg" class="dealsalon">
+                        <div class="deal-timer">Special Offer Ends In: <span id="dealtimer">00:15:23:45</span></div>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <h4 class="align-middle" style="padding-top: 50px; font-size: 26px;">LOOKS SALON</h4>
+                        <p>Mumbai</p>
+                        <button class="btn btn-warning">Book Now</button>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <ul class="list-unstyled offer">
+                            <li>30% Off Skincare Treatments</li>
+                            <li>Free Facial with Hair Color</li>
+                            <li>Complimentary Makeup Trial</li>
+                            <li>Flat ₹500 Off on Hair Smoothing</li>
+                        </ul>
+                     
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        
+    </div>
+</section>
+
+
+<section class="testimonial">
+    <div class="container my-5">
+        <!-- Testimonial Carousel -->
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators (dots) -->
+            <ol class="carousel-indicators">
+                <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Testimonial Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="testimonial">
+                                <img src="images/testi.jpg" alt="Client 1">
+                                <h5>John Doe</h5>
+                                <p class="text-muted">Marketing Director</p>
+                                <div class="stars">
+                                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                                </div>
+                                <p>"The service at SalonHub was excellent. I couldn't have asked for a better experience."</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="testimonial">
+                                <img src="images/testi.jpg" alt="Client 2">
+                                <h5>Jane Smith</h5>
+                                <p class="text-muted">CEO, Startup Inc.</p>
+                                <div class="stars">
+                                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                                </div>
+                                <p>"Highly professional staff and a wonderful environment. I felt completely relaxed!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="testimonial">
+                                <img src="images/testi.jpg" alt="Client 3">
+                                <h5>Mike Johnson</h5>
+                                <p class="text-muted">Freelancer</p>
+                                <div class="stars">
+                                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                                </div>
+                                <p>"A delightful experience with personalized services. SalonHub is now my go-to!"</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="testimonial">
+                                <img src="images/testi.jpg" alt="Client 4">
+                                <h5>Emily Davis</h5>
+                                <p class="text-muted">Graphic Designer</p>
+                                <div class="stars">
+                                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                                </div>
+                                <p>"The staff really knows how to make you feel special. Great service all around!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+ <!-- Recommend -->
+    
+
+<section class="recom text-center">
+    
+    <div class="container">
+        <h2 class="mb-4" style="color: white;">Recommended Shops</h2>
+
+        
+   
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+        <div class="card">
+          <img src="images/salon/1.jpg" class="card-img-top" >
+          <div class="card-body">
+            <h5 class="card-title">Salon One</h5>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="images/salon/2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Salon Two</h5>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+        <div class="card d-none d-md-block">
+          <img src="images/salon/3.jpg" class="card-img-top" >
+          <div class="card-body">
+            <h5 class="card-title">Salon Three</h5>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="images/salon/4.jpg" class="card-img-top" >
+            <div class="card-body">
+              <h5 class="card-title">Salon Four</h5>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+          <div class="card d-none d-md-block">
+            <img src="images/salon/6.jpg" class="card-img-top" >
+            <div class="card-body">
+              <h5 class="card-title">Salon Five</h5>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+          <div class="card d-none d-md-block">
+            <img src="images/salon/5.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Salon Six</h5>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="images/salon/2.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Salon Sevn</h5>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+          <div class="card d-none d-md-block">
+            <img src="images/salon/4.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Salon Eight</h5>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+          <div class="card d-none d-md-block">
+            <img src="images/salon/2.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Salon Nine</h5>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+</div>
+</section>
+
+
+
+<section class="appdown">    
+    <div class="container">
+        <div class="row" style="padding: 30px;">
+            <div class="col-md-10">
+                <h1>Download our App</h1>
+                <p style="font-size: 22px;line-height: 2;">Book treatments and find the best sSalons near by you with few simple clicks from our mobile app</p>
+                <button class="btn btn-primary">Get the link</button>
+
+            </div>
+            <div class="col-md-2">
+                <img src="images/appstore.png" class="storeicons">
+                <img src="images/playstore.png" class="storeicons">
+            </div>
+        </div>
+    </div>
+</section>
+       
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <!-- 1st Column: Logo and Social Icons -->
+                    <div class="col-md-3">
+                        <div class="footer-logo">
+                            <img src="images/logo.png">
+                        </div>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+    
+                    <!-- 2nd Column: Menu Links -->
+                    <div class="col-md-3">
+                        <h5>Discover</h5>
+                        <div class="footer-links">
+                            <a href="#">Treatment Guide</a>
+                            <a href="#">The Treatment Files</a>
+                            <a href="#">Treadwell Gift Card</a>
+                            <a href="#">Newsletter Signup</a>
+                            <a href="#">Glossary</a>
+                        </div>
+                    </div>
+    
+                    <!-- 3rd Column: Menu Links -->
+                    <div class="col-md-3">
+                        <h5>Partners</h5>
+                        <div class="footer-links">
+                            <a href="#">Become a Partner</a>
+                            <a href="#">Help Centre</a>
+                            <a href="#">Pro Help Centre</a>
+                            <a href="#">Pro Resources</a>
+                            <a href="#">Affiliate Program</a>
+                        </div>
+                    </div>
+    
+                    <!-- 4th Column: Menu Links -->
+                    <div class="col-md-3">
+                        <h5>Company</h5>
+                        <div class="footer-links">
+                            <a href="#">About Us</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Legal & GDPR</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Bottom Center Text -->
+                <div class="footer-bottom">
+                    <p style="padding: 50px;">Salonhub &copy; <span id="currentYear"></span>. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
